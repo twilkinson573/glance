@@ -22,6 +22,13 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
+# Ruby Readline to fix the random console error when running rails commands
+gem 'rb-readline', '~> 0.5.1'
+# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+# Added :x64_mingw for tzinfo on 64 bit Windows
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
+# Boostrap sass for frontend
+gem "bootstrap-sass"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -35,11 +42,4 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-# Added :x64_mingw for tzinfo on 64 bit Windows
 
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
-
-# Ruby Readline to fix the random console error when running rails commands
-
-gem 'rb-readline', '~> 0.5.1'
