@@ -29,6 +29,8 @@ gem 'rb-readline', '~> 0.5.1'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
 # Boostrap sass for frontend
 gem "bootstrap-sass"
+#Devise for user accounts and logins
+gem "devise", "~> 3.2.4"
 
 group :development, :test do
   gem "sqlite3"

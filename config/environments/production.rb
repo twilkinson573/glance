@@ -80,4 +80,9 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+  
+  #Required for Devise setup
+  #Set this to actual host, check if switching to custom domain
+  config.action_mailer.default_url_options = { host: 'tryglance.herokuapp.com' }
+  
 end
