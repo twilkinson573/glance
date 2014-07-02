@@ -31,6 +31,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
 gem "bootstrap-sass"
 #Devise for user accounts and logins
 gem "devise", "~> 3.2.4"
+#Paperclip for image upload
+gem "paperclip", github: "thoughtbot/paperclip"
 
 group :development, :test do
   gem "sqlite3"
