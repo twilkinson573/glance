@@ -33,6 +33,8 @@ gem "bootstrap-sass"
 gem "devise", "~> 3.2.4"
 #Paperclip for image upload
 gem "paperclip", github: "thoughtbot/paperclip"
+#AWS gem to store Paperclip images in production
+gem "aws-sdk", "~> 1.46.0"
 
 group :development, :test do
   gem "sqlite3"
