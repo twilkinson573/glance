@@ -35,6 +35,10 @@ gem "devise", "~> 3.2.4"
 gem "paperclip", github: "thoughtbot/paperclip"
 #AWS gem to store Paperclip images in production
 gem "aws-sdk", "~> 1.46.0"
+#Masonry jQuery for pinterest style frontend
+gem "masonry-rails", "~>0.2.1"
+#ADD NOTE 
+gem "jquery-turbolinks" 
 
 group :development, :test do
   gem "sqlite3"
