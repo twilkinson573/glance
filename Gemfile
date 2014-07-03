@@ -37,8 +37,12 @@ gem "paperclip", github: "thoughtbot/paperclip"
 gem "aws-sdk", "~> 1.46.0"
 #Masonry jQuery for pinterest style frontend
 gem "masonry-rails", "~>0.2.1"
-#ADD NOTE 
-gem "jquery-turbolinks" 
+#Fixes Turbolinks to work with jQuery
+gem "jquery-turbolinks"
+#will_paginate for pin page pagination
+gem "will_paginate", "~>3.0.6"
+#will_paginate-Bootstrap for Boostrap style pagination views
+gem "will_paginate-bootstrap"
 
 group :development, :test do
   gem "sqlite3"
