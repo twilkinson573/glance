@@ -1,4 +1,6 @@
 Glance::Application.routes.draw do
+  get 'profiles/show'
+
   resources :pins
 
   devise_for :users
