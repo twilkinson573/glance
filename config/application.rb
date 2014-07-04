@@ -22,5 +22,8 @@ module Glance
     
     #Required for Heroku and Devise to play nice
     config.assets.initialize_on_precompile = false
+    
+    #Part of Bootstrap Glyphicons fix 
+    config.assets.paths << "#{Rails}/vendor/assets/fonts"
   end
 end
