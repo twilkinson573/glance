@@ -11,6 +11,12 @@
  * file per style scope.
  *
  
+ @font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('/public/assets/glyphicons-halflings-regular.eot');
+  src: url('/public/assets/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('/public/assets/glyphicons-halflings-regular.woff') format('woff'), url('/public/assets/glyphicons-halflings-regular.ttf') format('truetype'), url('/public/assets/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
+
  *= require_self
  *= require bootstrap
  *= require 'masonry/transitions'
