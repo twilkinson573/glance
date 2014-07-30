@@ -1,5 +1,7 @@
 #glance
 
-glance is a portal where freelance street photographers can upload their shots for others to use royalty free.
+glance is a portal for sharing streetwear images and inspiration.
+
+Share what you see on the web and the street and explore fashion trends before they hit the high street.
 
 by Thomas Wilkinson
