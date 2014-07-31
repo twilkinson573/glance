@@ -7,7 +7,9 @@
       <div class="modal" id="myModal" tabindex="-1" role="dialog" data-keyboard="false" aria-labelledby="myModalLabel" aria-hidden="true">Loading...</div>
       <div class="panel-body">
         <p><%= pin.description %></p>
-        <p><strong><%= pin.user.username if pin.user %></strong></p>
+        <p><strong>
+          <%= link_to pin.user.username, user_path(pin.user) %>
+        </strong></p>
         
         <% if current_user && pin.user == current_user %>
           <div class=actions">
