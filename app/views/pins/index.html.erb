@@ -4,7 +4,7 @@
   <% @pins.each do |pin| %>
     <div class="box panel panel-default">
       <%= link_to image_tag(pin.image.url(:medium)), pin_path(pin), remote: true, class: 'static-popup-link' %>
-      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false">Loading...</div>
+      <div class="modal" id="myModal" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false"aria-labelledby="myModalLabel" aria-hidden="true">Loading...</div>
       <div class="panel-body">
         <p><%= pin.description %></p>
         <p><strong><%= pin.user.username if pin.user %></strong></p>
