@@ -2,6 +2,7 @@ Glance::Application.routes.draw do
   resources :pins
 
   devise_for :users
+  resources :users, :only => [:show]
   root "pins#index" #root_path
   get "about" => "pages#about" #creates about_path
 
