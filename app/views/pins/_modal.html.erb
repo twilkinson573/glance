@@ -1,0 +1,30 @@
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel"><%= @pin.user.username if @pin.user %></h4>
+      </div>
+      <div class="modal-body">
+        <div class="panel panel-default">
+      <div class="panel-heading center">
+        <%= image_tag @pin.image.url(:medium) %>
+      </div>
+      <div class="panel-body">
+        <p><%= @pin.description %></p>
+        <p><strong><%= @pin.user.username if @pin.user %></strong></p>
+
+        <% if current_user && @pin.user == current_user %>
+         <%= link_to edit_pin_path(@pin) do %>
+            <span class="glyphicon glyphicon-edit"></span>
+            Edit
+          <% end %>
+        <% end %>
+
+      </div>
+    </div>
+      </div>
+
+    </div>
+  </div>
+</div>
