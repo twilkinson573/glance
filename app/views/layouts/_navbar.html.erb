@@ -21,6 +21,9 @@
         
         <% if user_signed_in? %>
           <li>
+            <%= link_to "#{current_user.username}", user_path(current_user) %>
+          </li>
+          <li>
             <%= link_to new_pin_path do %>
               <button type="button" class="btn btn-primary navbar-btn"><span class="glyphicon glyphicon-plus"></span> New Pin</button>
             <% end %>
