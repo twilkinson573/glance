@@ -11,5 +11,11 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
   end
+  
+  def like
+    @user = current_user
+    @pin = Pin.find(params[:id])
+    @user.like!(@pin)
+  end
 
 end
